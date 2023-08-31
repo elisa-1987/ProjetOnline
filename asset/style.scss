@@ -39,6 +39,7 @@ header {
             margin-top: 50px;
             margin-right: 30px;
             display: block;
+            color: white;
 
         }
     }
@@ -53,7 +54,7 @@ header {
                 width: 290px;
 
                 a {
-                    font-family: $Inconsolata;
+                    font-family: $workSansBold;
                     font-size: 1.2rem;
                     color: #ffff;
                     padding: 20px 0;
@@ -62,7 +63,7 @@ header {
 
         }
 
-        #navigation.active {
+        #navbar.active {
             display: block;
             display: flex;
             flex-direction: column;
@@ -70,28 +71,35 @@ header {
         }
     }
 }
+#titleHero {
+    color:white;
+    text-align: center;
+    font-size: 8rem;
+   
+}
+#subTitle {
+    color:white;
+    text-align: center;
+}
+#title3 {
+    
+    color: black;
+    text-align: center; 
+    font-size: 1.3rem;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: white;
 
-.hero {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
 
-    img {
-        width: 70%;
-        border-radius: 20px;
-
-    }
-
+}
     .presentation {
         margin-top: 40px;
         font-size: 1.2rem;
         line-height: 1.3;
         color: white;
         text-align: center;
+        font-family: $workSansBold1;
     }
-}
-
 
 
 .cardStudent {
@@ -110,7 +118,7 @@ header {
         font-style: italic;
         font-family: $workSansBold;
         font-size: 2rem;
-        font-weight: 500;
+        font-weight: 600;
 
     }
 
@@ -122,10 +130,11 @@ header {
     }
 
     .card {
-        width: 300px;
-        height: 320px;
-        margin: 3em;
-       
+        width: 500px;
+        height: 500px;
+        margin: 5em;
+        // perspective: 1500px;
+
         .content {
             position: relative;
             width: 100%;
@@ -283,7 +292,7 @@ header {
     line-height: 2.9em;
     min-width: 3em;
     background-color: transparent;
-    border: solid 2px $secondary;
+    border: solid 2px black;
     color: white;
     border-radius: 4px;
     text-align: center;
@@ -293,7 +302,7 @@ header {
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 
     &:hover {
-        background-color:#11C1D3 ;
+        background-color: rgba(235, 70, 70, 0.963);
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
         text-shadow: none;
         color: white;
@@ -302,7 +311,8 @@ header {
     &.return {
         line-height: 3em;
         color: $primary;
-        border-color: $secondary ;
+        border: solid 2px black;
+        
         text-shadow: none;
 
         &:hover {
@@ -312,6 +322,9 @@ header {
         }
     }
 
+
+  
+    
 }
 }
 
@@ -327,8 +340,8 @@ footer{
     align-items: center;
 
     #footerLogo{
-        width: 450px;
-        height: 180px;
+        width: 250px;
+        height: 200px;
     }
 
     .copyright {
@@ -341,6 +354,7 @@ footer{
         text-align: center;
     }
 }
+
 
 
 

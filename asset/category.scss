@@ -1,0 +1,132 @@
+$workSansBold: 'Inconsolata-Bold',sans-serif;
+$workSansBold1: 'Inconsolata-ExtraBold',sans-serif;
+$primary: #FFFF;
+
+
+body {
+    background-color: #090D1F;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
+header {
+
+    #logoBurger {
+        display: flex;
+        justify-content: space-between;
+        margin: 25px 0;
+
+
+        #logo {
+            width: 250px;
+            height: 200px;
+            margin-left: 40px;
+        }
+
+        #menuBurger {
+            width: 50px;
+            height: 50px;
+            margin-top: 50px;
+            margin-right: 30px;
+            display: block;
+            color: white;
+
+        }
+    }
+
+    nav {
+        #navbar {
+            display: none;
+
+            li {
+                padding: 20px 0;
+                text-align: center;
+                width: 290px;
+
+                a {
+                    font-family: $workSansBold;
+                    font-size: 1.2rem;
+                    color: #ffff;
+                    padding: 20px 0;
+                }
+            }
+
+        }
+
+        #navbar.active {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+}
+.categories {
+    width: 100%;
+    height: auto;
+
+    .container {
+        height: 250px;
+
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    .items {
+        border-radius: 10px;
+        cursor: pointer;
+        border: 3px solid #FFFF;
+        transition: all 0.6s;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+
+    }
+
+    .icon-wrapper,
+    .project-name {
+        margin-bottom: 10px;
+    }
+
+    .icon-wrapper #pictures {
+        width: 400px;
+        height: 400px;
+        transform: translateY(0px);
+        transition: all 0.8s;
+    }
+
+    .project-name p {
+        font-size: 2.3rem;
+        font-family: $workSansBold;
+        letter-spacing: 2px;
+        color: #FFFF;
+        transform: translateY(0px);
+        transition: all 0.5s;
+        text-align: center;
+    }
+
+    .items:hover {
+        border: 3px solid $primary;
+
+        & .project-name p {
+            transform: translateY(-10px);
+        }
+
+        & .icon-wrapper #pictures {
+            transform: translateY(5px);
+        }
+    }
+}

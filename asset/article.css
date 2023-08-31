@@ -1,0 +1,76 @@
+body {
+  background-color: #090D1F;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.row-limit-size {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header #logoBurger {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+header #logoBurger #logo {
+  width: 250px;
+  height: 200px;
+  margin-left: 40px;
+}
+header #logoBurger #menuBurger {
+  width: 50px;
+  height: 50px;
+  margin-top: 60px;
+  margin-right: 40px;
+  display: block;
+}
+header nav #navigation {
+  display: none;
+}
+header nav #navigation li {
+  padding: 20px 0;
+  text-align: center;
+  width: 300px;
+}
+header nav #navigation li a {
+  font-family: "Inconsolata-ExtraBold", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  padding: 20px 0;
+}
+header nav #navigation.active {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+h2 {
+  font-size: 4rem;
+  inset: auto auto 30px 30px;
+  color: rgb(234, 74, 74);
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "Inconsolata-Bold", sans-serif;
+  text-align: center;
+}
+
+#texte {
+  padding: 70px;
+  inset: auto auto 80px 20px;
+  font-family: "Inconsolata-Bold", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  transition: opacity 0.3s ease-out;
+  color: white;
+}/*# sourceMappingURL=article.css.map */
